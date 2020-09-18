@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "251287833867",
+    "firebase_url": "https://eclinic-b12d3.firebaseio.com",
+    "project_id": "eclinic-b12d3",
+    "storage_bucket": "eclinic-b12d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251287833867:android:14a3a09ef2f0f91f7ee60e",
+        "android_client_info": {
+          "package_name": "manu.apps.eclinic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251287833867-h1jt8rafg6f3s7ccjirbn2io73n50rdq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "manu.apps.eclinic",
+            "certificate_hash": "0b1aee0a29a4b2d91e8e12e93b3cfac8e450c564"
+          }
+        },
+        {
+          "client_id": "251287833867-c6etarqh0bmkn0ij5mrn5j2l8rk7pfc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzGMw9LaEI8A0FImwnGZFRUoLBLU-UFGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251287833867-c6etarqh0bmkn0ij5mrn5j2l8rk7pfc7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -27,8 +27,8 @@
             android:padding="5dp">
 
             <ImageView
-                android:layout_width="300dp"
-                android:layout_height="250dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:src="@drawable/ic_launcher"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"/>
@@ -49,8 +49,9 @@
                 android:paddingBottom="5dp"
                 android:textColorHint="@android:color/white"
                 app:counterEnabled="true"
-                app:counterMaxLength="10"
-                app:counterTextColor="@android:color/white">
+                app:counterMaxLength="50"
+                app:counterTextColor="@android:color/white"
+                app:hintTextColor="@android:color/white">
 
                 <!--android:maxLength="13"-->
                 <com.google.android.material.textfield.TextInputEditText
@@ -61,9 +62,9 @@
                     android:drawableStart="@drawable/ic_email"
                     android:drawableLeft="@drawable/ic_email"
                     android:drawablePadding="10dp"
-                    android:hint="Enter Email"
-                    android:inputType="number"
-                    android:maxLength="10"
+                    android:hint="@string/enter_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
                     android:textColor="@android:color/white" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -90,7 +91,8 @@
                 app:counterMaxLength="12"
                 app:counterTextColor="@android:color/white"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@android:color/white">
+                app:passwordToggleTint="@android:color/white"
+                app:hintTextColor="@android:color/white">
 
                 <!--android:maxLength="13"-->
                 <com.google.android.material.textfield.TextInputEditText
@@ -101,7 +103,7 @@
                     android:drawableStart="@drawable/ic_password"
                     android:drawableLeft="@drawable/ic_password"
                     android:drawablePadding="10dp"
-                    android:hint="Enter Password"
+                    android:hint="@string/enter_password"
                     android:inputType="textPassword"
                     android:maxLength="12"
                     android:textColor="@android:color/white" />
@@ -113,14 +115,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Login"
-                android:theme="@style/MaterialTheme" />
+                android:text="@string/login"
+                android:theme="@style/MaterialTheme"
+                app:rippleColor="@android:color/white"/>
 
             <ProgressBar
                 android:id="@+id/pb_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/don_t_have_an_account_register"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/white"
+                android:theme="@style/MaterialTheme"
+                android:foreground="?attr/selectableItemBackgroundBorderless" />
 
         </LinearLayout>
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Karibu"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimary"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tv_registration_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/TextAppearance.AppCompat.Small"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/proceed"
+        android:theme="@style/MaterialTheme"
+        android:textColor="@android:color/white"/>
+
+
+</LinearLayout>

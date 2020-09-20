@@ -28,12 +28,6 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
 
-    TextView tvCondition;
-    Button btnSunny, btnFoggy;
-
-    DatabaseReference rootDatabaseReference = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference conditionReference = rootDatabaseReference.child("condition");
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
@@ -52,42 +46,6 @@ public class HomeFragment extends Fragment {
 
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 
-
-        btnSunny = view.findViewById(R.id.btn_sunny);
-        btnFoggy = view.findViewById(R.id.btn_foggy);
-        tvCondition = view.findViewById(R.id.tv_condition);
-
-        btnSunny.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                conditionReference.setValue("Sunny");
-            }
-        });
-
-        btnFoggy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                conditionReference.setValue("Foggy");
-            }
-        });
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        conditionReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String text = snapshot.getValue(String.class);
-                tvCondition.setText(text);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-    }
 }

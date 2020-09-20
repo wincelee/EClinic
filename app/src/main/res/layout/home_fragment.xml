@@ -17,35 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tv_condition"
-            style="@style/TextAppearance.AppCompat.Display3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Condition" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/btn_sunny"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:text="Sunny" />
-
-            <Button
-                android:id="@+id/btn_foggy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:text="Foggy" />
-
-        </RelativeLayout>
-
     </LinearLayout>
 
 
